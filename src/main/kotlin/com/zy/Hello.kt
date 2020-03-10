@@ -2,7 +2,7 @@ package com.zy
 
 fun main() {
     //print("Hello Kotlin")
-    //Human().hello()
+    val h = Human().hello()
 
     var age=19
     age=20
