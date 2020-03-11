@@ -4,7 +4,10 @@ fun main() {
     //print("Hello Kotlin")
     val h = Human("Tim",66.5f,1.7f)
     println(h.bmi())
-
+    var score = 80
+    println(score > 60)
+    var c : Char = 'A'
+    println(c.toInt() > 60)
    /* var age=19
     age=20
     var weight = 66.5
