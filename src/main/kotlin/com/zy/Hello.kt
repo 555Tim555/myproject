@@ -2,6 +2,11 @@ package com.zy
 
 fun main() {
     //print("Hello Kotlin")
+    var s :String? = "abcde"
+    //s = null
+    println(s?.length)
+    println(s?.get(3))
+
     val h = Human("Tim",66.5f,1.7f)
     println(h.bmi())
     var score = 80
