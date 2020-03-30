@@ -1,4 +1,4 @@
-package com.zy
+package com.zy.kotlin
 
 import com.Kotlin.Student
 import org.junit.Test
@@ -9,7 +9,7 @@ class StudentTest(){
     fun gradingTest(){
         val student = Student("Tang",60,90)
         Assertions.assertEquals('C',student.grading())
-    } 
+    }
 
     @Test
     fun highestScoreTest(){
