@@ -5,6 +5,7 @@ public class Student {
     String name;
     int english;
     int math;
+    static int pass = 60;  //加入static屬於類別層級的資料，只有Student這個類別可以使用，類別裡面新建的物件不能使用
 
     public Student(String name, int english, int math) {
         this.name = name;
@@ -19,7 +20,7 @@ public class Student {
     public void print(){
         int average = getAverage();
         System.out.print(name + "\t" + english + "\t" + math +
-                "\t" + getAverage() + "\t" + ((getAverage() >= 60)? "PASS" : "FAILED"));
+                "\t" + getAverage() + "\t" + ((getAverage() >= pass)? "PASS" : "FAILED"));
         char grade;
         switch (average/10)
         {
