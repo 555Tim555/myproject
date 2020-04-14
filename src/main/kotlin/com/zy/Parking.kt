@@ -2,6 +2,7 @@ package com.zy
 
 import java.time.Duration
 import java.time.LocalDateTime
+import kotlin.math.ceil
 
 fun main() {
     val enter = LocalDateTime.of(2020,3,30,8,30,0)
@@ -9,7 +10,7 @@ fun main() {
     var car = Car("AA-0001",enter)
     car.leave = leave
     println(car.duration())
-    val hours = Math.ceil(car.duration()/60.0).toLong()
+    val hours = ceil(car.duration()/60.0).toLong()
     println(hours)
 
 }
